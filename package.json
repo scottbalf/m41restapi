@@ -1,0 +1,25 @@
+{
+  "name": "m41restapi",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000m\u00004\u00001\u0000r\u0000e\u0000s\u0000t\u0000a\u0000p\u0000i\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scottbalf/m41restapi.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/scottbalf/m41restapi/issues"
+  },
+  "homepage": "https://github.com/scottbalf/m41restapi#readme",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongoose": "^6.6.7"
+  }
+}
