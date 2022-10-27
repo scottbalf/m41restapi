@@ -12,7 +12,7 @@ exports.hashPass = async (req, res, next) => {
     }
 }
 
-exports.tokenCheck = async (request, response, next) => {
+exports.tokenCheck = async (req, res, next) => {
     try {
         const token = request.header("Authorization");
         const decodedToken = await jwt.verify(token,process.env.SECRET);
@@ -26,7 +26,7 @@ exports.tokenCheck = async (request, response, next) => {
     }
 }
 
-exports.comparePass = async (request, response, next) => {
+exports.comparePass = async (req, res, next) => {
     try {
         request.user = await User.findOne({username: request.body.username});
         if (request.user &&

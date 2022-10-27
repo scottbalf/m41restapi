@@ -50,7 +50,6 @@ exports.deleteUser = async (req, res) => {
 
 exports.loginUser = async (req, res) => {
     try {
-// TASK is to generate a token on createuser and loginuser. This token should include unique information from the db entry. The token needs to sent back in the response and have an an endpoint that will find the user given just the token.
         const token = await jwt.sign({_id: req.user._id}, process.env.SECRET);
         res.status(200).send({user: req.user.username, token, text: "Sucessfully logged in"})
     } catch (error) {
